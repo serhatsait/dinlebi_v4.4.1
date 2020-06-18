@@ -1,10 +1,94 @@
-html{
+html {
   width: 100%;
   -webkit-appearance: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 html, body {
   width: 100%;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+
+  .img-fluid-min {
+    width: 100vw;
+    height: auto;
+  }
+
+  > .full-img-left {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+    .text-title {
+      width: 100%;
+      max-width: 200px;
+      margin-top: 50px;
+
+      h1 {
+        color: #404040;
+        font-size: 64px;
+      }
+    }
+
+    .go-app {
+      margin-top: 50px;
+
+      .go-app-link {
+        color: #ffffff;
+        background-color: #3ca2ea;
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+
+        h2 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.content-text {
+  position: relative;
+  display: block;
+  padding: 50px 0;
+  color: #272727;
+  font-size: 28px;
+}
+
+.bg-grey {
+  background-color: #e3e3e3;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.sm-logo {
+  padding-right: 20px;
+}
+
+.sm-text {
+  margin-top: 20px;
+  border-right: 2px solid;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .sm-text {
+    border-bottom: 2px solid;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+}
+
+.sm-text-none-border {
+  margin-top: 20px;
+  padding-right: 20px;
 }
